@@ -1,1 +1,8 @@
 <h1>Website im Aufbau</h1>
+<script>
+  window.onload = function() {
+    if (window.location.protocol === "http:" && window.location.protocol !== "https:") {
+    window.location.href = "http://" + window.location.hostname + window.location.pathname + window.location.search;
+    }
+  }
+</script>
