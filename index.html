@@ -1,8 +1,13 @@
 <h1>Website im Aufbau</h1>
 <script>
   window.onload = function() {
-    if (window.location.protocol === "http:" && window.location.protocol !== "https:") {
-    window.location.href = "http://" + window.location.hostname + window.location.pathname + window.location.search;
-    }
+    // Get the current URL
+var currentUrl = window.location.href;
+
+// Check if the URL starts with "http://"
+if (currentUrl.startsWith("http://")) {
+    // Redirect to "https://"
+    window.location.href = currentUrl.replace("http://", "https://");
+}
   }
 </script>
