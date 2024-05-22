@@ -143,72 +143,19 @@
       main {
         margin-top: 80px;
         padding: 20px;
-        margin-bottom: 200px;
       }
 
-      .hero {
-        text-align: center;
-        padding: 50px 20px;
-        border-radius: 15px;
-        margin-bottom: 40px;
-        font-family: "Bold", arial, sans-serif;
-        letter-spacing: 1px;
-        color: rgb(12, 28, 71);
-      }
-
-      .hero h1 {
-        font-size: 4.5rem;
-        margin-bottom: 20px;
-      }
-
-      .hero p {
-        font-size: 1.25rem;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-      }
-
-      .card {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-        cursor: pointer;
-      }
-
-      .card:hover {
-        transform: scale(1.02);
-      }
-
-      .card img {
-        max-width: 100%;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-
-      .card h3 {
-        margin: 0 0 10px;
-        color: rgb(12, 28, 71);
-      }
-
-      .card p {
-        margin: 0;
-      }
-
-      .footer {
-        position: fixed;
+      footer {
+        position: absolute;
         width: 100%;
         bottom: 0;
         left: 0;
         text-align: center;
-        padding-top: 20px;
         padding-bottom: 20px;
+        padding-top: 20px;
         background-color: rgb(12, 28, 71);
         color: #fff;
+        margin-top: 40px;
         border-top: 5px solid #333;
       }
 
@@ -231,25 +178,9 @@
         background-color: rgb(139, 149, 171);
       }
 
-      h2 {
-        font-size: large;
-      }
-
-      /* animation */
-      .slide-in-fwd-right {
-        animation: slide-in-fwd-right 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000);
-      }
-
-      @keyframes slide-in-fwd-right {
-        0% {
-          transform: translateZ(-1400px) translateX(1000px);
-          opacity: 0;
-        }
-
-        100% {
-          transform: translateZ(0) translateX(0);
-          opacity: 1;
-        }
+      h1 {
+        text-align: center;
+        color: rgb(12, 28, 71);
       }
 
       @media (min-width: 1001px) {
@@ -270,21 +201,6 @@
 
         .hamburger {
           display: flex;
-        }
-
-        .hero {
-          height: calc(82dvh - 100px);
-          padding: 0;
-          margin: 0;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          align-content: center;
-          margin-bottom: 100px;
-        }
-
-        .hero * {
-          margin: 10px !important;
         }
       }
     </style>
@@ -317,34 +233,10 @@
       </div>
     </header>
     <main>
-      <div class="hero slide-in-fwd-right">
-        <h1>Die Welt bewegt sich.</h1>
-        <p>Unsere Kugellager auch.</p>
-      </div>
-      <div class="content slide-in-fwd-right">
-        <div class="card card1" onclick="redirect('about-us')">
-          <img src="images/Kugellager.webp" alt="Kugellager">
-          <h2>Erfahrung und Qualität</h2>
-          <p>Als Familienunternehmen haben wir viel Erfahrung mit den Produkten die Sie benötigen können. Diese stellen wir seit einigen Jahren her und vertreiben sie international mit größtem Vertrauen.</p>
-        </div>
-        <div class="card card2" onclick="redirect('kugellager')">
-          <img src="images/skizze.webp" alt="Skizze">
-          <h2>Wälzlager</h2>
-          <p>Unsere Wälz- und Kugellager zeichnen sich durch höchste Qualität und Langlebigkeit aus. Die besten Materialien nutzen wir um Sie zu unterstützen!</p>
-        </div>
-        <div class="card card3" onclick="redirect('geschichte')">
-          <img src="images/Logo.webp" alt="Logo">
-          <h2>Unsere Geschichte</h2>
-          <p>Unsere Unternehmensgeschichte als Familienunternehmen.</p>
-        </div>
-      </div>
+      <h1>Seite nicht gefunden!</h1>
     </main>
     <footer class="footer">
       <p>GCT Gruber Consulting & Technology</p>
-      <p>Kontaktieren Sie uns!</p>
-      <button onclick="redirect('captcha')">
-        <b>Kontakt</b>
-      </button>
     </footer>
     <script>
       function redirect(url) {
